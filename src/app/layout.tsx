@@ -1,4 +1,3 @@
-
 export const metadata = {
   title: 'Francielly Medeiros | Lash Designer',
   description: 'Course',

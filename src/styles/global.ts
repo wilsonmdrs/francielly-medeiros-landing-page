@@ -1,9 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-const  documentHeight = Math.max(
-    document.body.scrollHeight,
-    document.documentElement.scrollHeight
-  );
 
 export default createGlobalStyle`
     *{
@@ -16,6 +12,6 @@ export default createGlobalStyle`
     body {
       margin: 0;
       width: 100vw;
-      height: ${documentHeight + 'px'};
+      height: 100vh;
     }
  `;
