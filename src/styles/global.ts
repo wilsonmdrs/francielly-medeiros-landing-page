@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const getHeight = () => {
   if (typeof window === 'undefined') return '100vh'
   const documentHeight = Math.max(
-      window.document.body.scrollHeight,
+      window.document.body.clientHeight,
       window.document.documentElement.scrollHeight
     );
   return documentHeight + 'px'
@@ -20,5 +20,7 @@ export default createGlobalStyle`
       margin: 0;
       width: 100vw;
       height: ${getHeight()};
+      max-height: 100vh;
+      overflow: hidden;
     }
  `;

@@ -1,17 +1,11 @@
-import { Button, Container, NavItem, NavItemContainer } from "./styles"
+import { LogoImage } from "~/assets"
+import { Button, Container, Logo } from "./styles"
 
 export const Navbar = () => {
 
     return (
         <Container>
-            <NavItemContainer>
-                <NavItem>Home</NavItem>
-                <NavItem>Lash Lifting</NavItem>
-                <NavItem>Starter</NavItem>
-                <NavItem>Pro</NavItem>
-                <NavItem>Buy</NavItem>
-            </NavItemContainer>
-            <Button>Comprar</Button>
+            <Logo src={LogoImage} alt="logo" />
         </Container>
     )
 }
