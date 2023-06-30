@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
+import { BreakpointsEnum, breakpoints } from "~/utils/breakpoints";
 
 export const Container = styled.nav`
     display: flex;
@@ -8,6 +9,9 @@ export const Container = styled.nav`
     height: 10%;
     padding: 10px 30px;
     z-index: 2;
+    ${breakpoints('visibility', '', [
+    {[BreakpointsEnum.MOBILE]: 'hidden'}
+  ])}
 `
 
 export const Logo = styled(Image)`

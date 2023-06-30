@@ -1,3 +1,3 @@
 import { home } from "./home";
-
-export { home }
+import { lashLifting } from "./lashLifting";
+export { home, lashLifting }

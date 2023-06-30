@@ -1,5 +1,5 @@
 import { LogoImage } from "~/assets"
-import { Button, Container, Logo } from "./styles"
+import { Container, Logo } from "./styles"
 
 export const Navbar = () => {
 

@@ -7,6 +7,7 @@ import { theme } from "~/styles/theme";
 import { Main } from "./styles";
 import { Home } from "~/screens/Home";
 import { Navbar } from "~/components/Navbar";
+import { LashLifting } from "~/screens/LashLifting";
 
 export default function Page() {
   return (
@@ -15,6 +16,7 @@ export default function Page() {
       <Main>
         <Navbar />
         <Home />
+        <LashLifting />
       </Main>
     </ThemeProvider>
   );
